@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 struct item{
-  char nome[50]; 
+  char nome[20]; 
   int quantidade;
   float valor;
 };
@@ -13,6 +13,7 @@ struct item{
 int main(void)
 {
   struct item itens[5];
+  
   int quantidade_MAX = 0;
   float valor = 0;
   float total = 0;
@@ -45,7 +46,7 @@ int main(void)
   printf("ITEM             QTD   VALOR\n");
   
   for (int i = 0; i < numero_de_itens; i++){
-      printf("%-16s %04i \x1b[34m%6.2f\x1b[0m\n", itens->nome, itens->quantidade, itens->valor);
+      printf("%-16s %03i \x1b[34m%6.2f\x1b[0m\n", itens[i].nome, itens[i].quantidade, itens[i].valor);
     }
   
   printf("\x1b[33m----------------------------\x1b[0m\n");
