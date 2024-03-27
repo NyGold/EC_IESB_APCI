@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <math.h>
 
+#define pi 3.1416
+
 int main(void)
 {
   int distancia = 0;
@@ -21,6 +23,6 @@ int main(void)
     return 0;
   }
 
-  altura = distancia * sin(angulo);
+  altura = distancia * sin(angulo * pi / 180);
   printf("altura alcançada: %i metros\n", altura);
 }
