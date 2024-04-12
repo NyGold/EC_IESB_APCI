@@ -8,7 +8,7 @@ int main(void)
     char tecla_pressionada;
 
     printf("pressione qualquer tecla: ");
-    scanf("%c", &tecla_pressionada);
+    tecla_pressionada = getchar();
 
     // a tecla que ele pressionar vai equivaler ao valor ascii da tecla
     if (tecla_pressionada >= 48 && tecla_pressionada <= 57)
