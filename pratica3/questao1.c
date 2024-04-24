@@ -7,8 +7,14 @@ int main(void)
   int numero = 0;
 
   printf("digite um número: ");
-  scanf("%d", &numero);
+  int leu_certo = scanf("%d", &numero);
 
+  if (!leu_certo)
+  {
+    printf("não foi possível ler o número\n");
+    return 0;
+  }
+  
   if (numero % 2 != 0)
   {
     printf("o número não é par\n");
