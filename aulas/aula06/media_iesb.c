@@ -27,7 +27,7 @@ int main(void)
     printf("segunda nota invalida. Coloque uma nota valida (0 a 10)\n");
     return 0;
   }
-  
+
   // media segundo o IESB
   media = (float)(0.4 * nota1 + 0.6 * nota2);
 
