@@ -20,6 +20,8 @@ int main(void)
   
   printf("coloque a quantidade do produto: ");
   scanf("%d", &quantidade);
+
+  total = valor * quantidade;
   
   printf("\x1b[33m----------------------------\n");
   printf("     N O T A   L E G A L   \n");
