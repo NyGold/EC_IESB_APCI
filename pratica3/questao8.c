@@ -1,18 +1,17 @@
 //8. Faça um programa em C que calcule o fatorial de um número inteiro.
-
 #include <stdio.h>
 
 int main(void)
 {
-    int numero = 0, total = 0;
+    int numero, resultado = 1;
 
-    printf("digite um numero: ");
+    printf("digite um número: ");
     scanf("%i", &numero);
 
     for (int i = numero; i > 0; i--)
     {
-        total += numero * (numero - i);
+        resultado = resultado * i;
     }
 
-    printf("o valor de %i! = %i", numero, total);
+    printf("%i", resultado);
 }
