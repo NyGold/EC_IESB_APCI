@@ -6,28 +6,28 @@
 
 int main(void)
 {
-    int nota = 0;
+    int nota;
     // ler o valor da nota pelo input
     printf("coloque a sua nota: ");
     scanf("%d", &nota);
 
-    // ver qual que é o qualitativo segundo a nota
+    // ver qual é o qualitativo segundo a nota
     switch (nota)
     {
         case 1: 
-            printf("Nota Ruim");
+            printf("Nota Ruim\n");
             break;
         case 2:
-            printf("Nota Insuficiente");
+            printf("Nota Insuficiente\n");
             break;
         case 3:
-            printf("Nota Suficiente");
+            printf("Nota Suficiente\n");
             break;
         case 4:
-            printf("Nota Boa");
+            printf("Nota Boa\n");
             break;
         case 5:
-            printf("Nota Otima");
+            printf("Nota Otima\n");
             break;
         default:
             printf("coloque uma nota valida(1,2,3,4 ou 5)\n");
