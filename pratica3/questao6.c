@@ -6,7 +6,7 @@ int main(void)
 {
     printf("#>-----------<#MULTIPLOS DE 3#>-----------<#\n");
     // lista todos os números mútiplos de 3 entre 1 a 100
-    for (int i = 0; i <= 100; i++)
+    for (int i = 1; i <= 100; i++)
     {
         if(i % 3 == 0)
         {
