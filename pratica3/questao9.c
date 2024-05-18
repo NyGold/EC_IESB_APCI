@@ -24,5 +24,5 @@ int main(void) {
     }
   }
 
-  printf("O maior numero é: \x1b[31m%i\x1b[0m e o menor numero foi: \x1b[31m%i\x1b[0m\n", numero_maior, numero_menor);
+  printf("O maior numero eh: \x1b[31m%i\x1b[0m e o menor numero foi: \x1b[31m%i\x1b[0m\n", numero_maior, numero_menor);
 }
