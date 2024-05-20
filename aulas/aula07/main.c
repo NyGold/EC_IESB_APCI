@@ -5,15 +5,13 @@
 int main(void) {
   int deuCerto, altura;
 
-  do {
-    printf("coloque a altura do triangulo: ");
-    deuCerto = scanf("%d", &altura);
+  printf("coloque a altura do triangulo: ");
+  deuCerto = scanf("%d", &altura);
 
-    if (!deuCerto) {
-      printf("Valor Inválido");
-      deuCerto = 1;
-    }
-  } while (!deuCerto);
+  if (!deuCerto) {
+    printf("Valor Inválido");
+    return 0;
+  }
 
   // meio triangulo orientado para a esquerda
   // for (int i = 0; i<=altura; i++){

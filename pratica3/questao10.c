@@ -3,24 +3,29 @@
 
 #include <stdio.h>
 
-// para converter de decimal para binario:
-// você divide o número e pega o RESTO (%) e divide por dois de novo,
-// até dar zero novamente
+int decToBin(int num);
 
 int main(void) {
       int numero;
-      int binario[8];
       int deu_certo;
 
-      // verificação de entrada
-      do {
-            printf("Coloque um numero na base decimal para transforma-lo em binario: ");
-            deu_certo = scanf("%d", &numero);
-
+      do 
+      {
+            printf("Coloque um numero decimal: ");
+            deu_certo = scanf("%i", &numero);         // deu_certo dar certo = 0
+                                                      // deu_certo dar errado = 1
             if (!deu_certo) {
-                  printf("valor invalido. Tente Novamente!");
+                  printf("Valor invalido. Tente novamente");
+                  continue;
             }
       } while (!deu_certo);
+
+      decToBin(numero);
+}
+
+int decToBin(int num) {
+      int numero = num;
+      int binario[8];
 
       // transformando o número decimal em binario
       for (int i = 7; i >= 0; i--) {
@@ -30,10 +35,9 @@ int main(void) {
             numero = numero / 2;
       }
 
-      // lendo a matriz
       for (int i = 0; i < 8; i++) {
-            printf("\x1b[31m%d\x1b[0m", binario[i]);
+            printf("%i", binario[i]);
       }
 
-      printf("\n");
+      return 0;
 }

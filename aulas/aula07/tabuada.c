@@ -11,7 +11,7 @@ int main(void)
   {
     printf("entre com um numero entre (%i a %i): ", VALOR_MINIMO, VALOR_MAXIMO);
     deu_certo = scanf("%i", &numero);
-    
+
     // verificação de entradas
     if (!deu_certo) 
     {
